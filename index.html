@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card - HNG Internship</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Profile Card Root Container -->
+  <article data-testid="test-profile-card" class="profile-card">
+    
+    <!-- Avatar Section -->
+    <figure class="profile-avatar">
+      <img 
+        src="https://media.licdn.com/dms/image/v2/D4E03AQFiP2ndKvNWiw/profile-displayphoto-scale_200_200/B4EZnsoCAsGcAY-/0/1760611543426?e=1762387200&v=beta&t=sOg0rlffqRQxjLC1HD1EITqqg2WM-lO-A-WL8LclA34" 
+        alt="Profile picture of Rotimi Olarotimi" 
+        data-testid="test-user-avatar"
+      />
+    </figure>
+
+    <!-- Profile Info Section -->
+    <div class="profile-info">
+      <header>
+        <h2 data-testid="test-user-name">Olarotimi Oriku</h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+       I’m a passionate frontend and backend developer with a strong focus on building intelligent and interactive chatbot experiences for the web, WhatsApp, Telegram, and Discord. I have hands-on experience integrating LLMs into applications to create smarter user interactions. My tech stack includes JavaScript, TypeScript, React, Next.js, and Python for backend development. I enjoy creating scalable solutions that combine functionality, simplicity, and great user experience.
+      </p>
+
+      <p>
+        <span data-testid="test-user-time" id="time"></span>
+      </p>
+
+      <!-- Social Links -->
+      <nav>
+        <ul data-testid="test-user-social-links" class="social-links">
+          <li><a href="https://x.com/rotimi_praise" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+          <li><a href="https://github.com/orikuOlarotimi" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/olarotimi-praise-6251aa31a/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hobbies -->
+      <div class="user-section">
+        <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Reading</li>
+          <li>Football</li>
+        </ul>
+      </section>
+
+      <!-- Dislikes -->
+      <section >
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Procrastination</li>
+          <li>Slow internet</li>
+          <li>Unfinished projects 😅</li>
+        </ul>
+      </section>
+      </div>
+    </div>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
